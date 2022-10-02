@@ -1,0 +1,19 @@
+<html xmlns:th="http://www.thymeleaf.org" th:replace="baseuser::layout(~{::section})">
+	<head>
+		<meta charset="utf-8">
+		<title>this is dashboard page</title>
+	</head>
+	<body>
+		<section>
+			<div class="card">
+				<div class="card-body">
+					<div class="conatiner text-center">
+						<img class="my_profile_picture" alt="profile photo" style="height: 200px; width: 200px;" src="" th:src="@{'/img/contact.png'}">
+					</div>
+					<h1 class="text-center  text-secondary font-italic font-weight-light mt-2">Start adding your contact</h1>
+				</div>
+			</div>
+		</section>
+		
+	</body>
+</html>
