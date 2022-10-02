@@ -32,7 +32,7 @@ public class EmailService {
 		  @Override
 		protected PasswordAuthentication getPasswordAuthentication() {
 			// TODO Auto-generated method stub
-			return new PasswordAuthentication("devyanshugarg70@gmail.com", "bobbygarg");
+			return new PasswordAuthentication("user@gmail.com", "password");
 		}
 		});
 		
@@ -41,7 +41,7 @@ public class EmailService {
 		MimeMessage m= new MimeMessage(session);
 		
 		try {
-			m.setFrom("devyanshugarg70@gmail.com");
+			m.setFrom("user@gmail.com");
 			
 			m.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 			
